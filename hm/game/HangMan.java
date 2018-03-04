@@ -94,7 +94,7 @@ public class HangMan {
 
         //Change the Guessed Word Array
         for(int i = 0; i < chosenWord.length(); i++) {
-            if(guess == chosenWord.charAt(i)) {
+            if(Character.toLowerCase(guess) == chosenWord.charAt(i)) {
                 guessedWord[i] = Character.toUpperCase(guess);
                 count++;
             }
